@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Pooja Jain, UX, Design, Portfolio">
+  <meta name="keywords" content="Design process and wireframes for an Digital Closet App.">
+  <meta name="copyright" content="The Owner">
+  <meta name="author" content="Pooja Jain">
+  <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../project4/css/style.css"> 
+    <link rel="shortcut icon" type="image/x-icon" href="..//project4/img/favicon.png">
+    <style>
+        * {
+            background-color: white;
+        }
+    </style>
+
+<title>Digital Closet Project</title>
+</head>
+<body>
+
+  <script>
+    // Function to format 1 in 01
+    const zeroFill = n => {
+      return ('0' + n).slice(-2);
+    }
+
+    // Creates interval
+    const interval = setInterval(() => {
+      // Get current time
+      const now = new Date();
+
+      // Format date as in mm/dd/aaaa hh:ii:ss
+      const dateTime = zeroFill((now.getMonth() + 1)) + '/' + zeroFill(now.getUTCDate()) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+      // Display the date and time on the screen using div#date-time
+      document.getElementById('date-time').innerHTML = dateTime;
+    }, 1000);
+  </script>
+
+<header class="navigation w-nav">
+  <div class="navigation-items">
+      <a href="..//project4/index.html" class="logo-link w-brand w--current"><img src="../project4/img/logo-final-.png" width="56" alt=" my initals logo" class="logo-image"></a>
+      <div class="navigation-wrap">
+        <nav role="navigation">
+          <a href="../project4/index.html" class="nav-items w-text w--current">Work</a>
+          <a href="../project4/About page.html" class="nav-items w-text">About</a>
+          <a href="https://github.com/pjain6801" class="nav-items w-text">Code</a>
+          <a href="../project4/Pooja Jain Resume.pdf" class="nav-items w-text">Resume</a>
+          <a href="..//project4/Contact.html" class="nav-items w-text">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+    
+        <img src="..//project4/img/Project pic - Digital Closet.png" class="project-pic" id="top" alt="Digital Closet App & Website pic">
+        <h1 class="project-heading">Digital Closet</h1>
+        <p class="project-blurb"></p>
+
+        <div class="project-content">
+          <h2 class="section-heading">Project Overview</h2>
+              <h3 class="section-subheading">Challenges</h3>
+                  <p class="content">The users’ current outfit planning experience is time consuming, physically draining and messy.</p>
+               <h3 class="section-subheading">Objective</h3>
+                  <p class="content">Through this app users outfit planning experience will be efficient, fast and effortless. </p>
+              <div class="button">
+                  <a href="#Final-Product" class="skip-button">Skip to Final Project</a>
+              </div>
+
+          <h2 class="section-heading">Research - Competitive Analysis of Similar Apps</h2>
+          <h3 class="section-subheading">Cladwell App</h3>
+        <div class="competitive-analysis-grid">
+            <div class="competitor1">
+              <img src="..//project4/img/Digital Closet - Competitor 1 App.png" alt="Caldwell App (Competitor App) pics">
+            </div>
+            <div class="competitor-blurb">
+              <h3 class="pros">Pros</h3>
+              <p class="content">- If you don't want to take photos, you can clip images from the web
+                <br> - Outfit suggestions take weather into account
+               <br> - Gives detailed statistics about your closet
+                </p>
+                <h3 class="cons">Cons</h3>
+              <p class="content">- Can’t make tweaks or changes to outfit suggestions 
+                <br> - Can’t create own outfits
+              </p>
+            </div>   
+        </div>
+        <h3 class="section-subheading">Pureple Outfit Planner App</h3>
+        <div class="competitive-analysis-grid">
+            <div class="competitor1">
+              <img src="..//project4/img/Digital Closet - Competitor 2 App.png" alt="Pureple Outfit Planner App (Competitor App) pics">
+            </div>
+            <div class="competitor-blurb">
+              <h3 class="pros">Pros</h3>
+              <p class="content">- Allows user to enter many details about item
+                <br> - Allows user to create their own outfits and  share them
+               <br> - Has social community to get outfit inspiration from
+                </p>
+                <h3 class="cons">Cons</h3>
+              <p class="content">- Doesn’t show the weather
+                <br> - Doesn’t give user control over closet organization
+            </div>   
+        </div>
+
+          <h2 class="section-heading">Research - User Interviews</h2>
+          <h3 class="section-subheading">User Interview Plan</h3>
+                  <p class="content">I will interview 10 people that represent my target audience. These people will be in the age ranges of 18 and 60. Through the 
+                    interviews, I will understand how they plan their outfit and organize their closets. I will learn about their process and their frustrations. </p>
+
+              <h3 class="section-subheading">User Interview Questions</h3>
+                  <p class="content">1. How do you pick out an outfit?
+                  <br> 2. If you lost a pair of pants or top, how would you describe it? 
+                  <br> 3. What are any problems you face with your closet currently? 
+                  <br> 4. If you would transform your closet digitally, what would you want?
+                  <br> 5. How do you organize your closet?
+                  <br> 6. What makes it easy for you to find clothes in your closet?
+                  <br> 7. Do you ever create pre-set outfits? If you could digital save outfits would you?
+                  <br> 8. Do you ever get other opinions when planning an outfit - how? 
+                  <br> 9. If you could generate data about your closet, would you want to know?
+                </p>
+          <h2 class="section-heading">User Interview Results</h2>
+                  <img src="..//project4/img/Digital Closet - Research.png" class="research-pic" alt="User Interview Results - Miro Board">
+                 
+          <h2 class="section-heading">Research - Key Takeaways/ Insights</h2>          
+            <h3 class="section-subheading">Key Features to Include / What Users Want</h3>
+            <p class="content"> 1. Weather - Because it is a key factor for users to consider when planning an outfit
+              <br> 2. Ability to share outfit with others
+              <br> 3. Let users add details about each clothing item - Because it helps them find the item 
+              <br> 4. Give users’ control over the organization of their digital closet - Because each user has a different way of organizing and categorizing 
+              their clothes 
+              <br> 5. Users should be able to save outfits 
+              <br> 6. Users would like statistics or data about their closet and outfit planning if possible
+            </p>
+
+          <h2 class="section-heading">User Analysis & Personas</h2>  
+          <div class="user-persona-grid">
+            <div class="user-persona1">
+              <img src="..//project4/img/Digital Closet - Persona 1.png" alt="User Persona - Stacy">
+            </div>
+            <div class="user-persona-blurb">
+              <h3 class="user-persona-name">Stacy</h3>
+              <p class="content">Stacy is 20 years old. She frequently has trouble figuring out what to wear. She usually ends up trying on all her clothes and 
+                then has to deal with hanging all of it up again. She wants a efficient way to go through her closet without making a mess. She also wants to be 
+                able to plan outfit to wear faster. </p>
+            </div>   
+        </div>  
+        <div class="user-persona-grid">
+          <div class="user-persona1">
+            <img src="..//project4/img/Digital Closet - Persona 2.png" alt="User Persona - Max">
+          </div>
+          <div class="user-persona-blurb">
+            <h3 class="user-persona-name">Max</h3>
+            <p class="content">Max is 38 years old. Max has a very busy schedule and usually has no time to plan out what to wear for work. He gets up very earlier 
+              in the morning and usually grabs whatever he can find. He wants a way that he can plan his outfit for the next day quickly and without physically 
+              going through his closet. </p>
+          </div>   
+      </div>  
+
+      <h2 class="section-heading">Storyboard</h2> 
+      <img src="..//project4/img/Digital Closet - Storyboard.png" alt="Storyboard picture">
+
+      <h2 class="section-heading">Hierarchical Task Analysis/ User Flow</h2>  
+      <img src="..//project4/img/Digital Closet - User Flow.png" alt="User Flow Diagram">
+
+      <h2 class="section-heading">Sketches</h2>  
+      <img src="..//project4/img/Digital Closet - Initial Sketches.png" alt="Inital App Sketches">
+
+      <h2 class="section-heading">High-Fidelity App Wireframes</h2>  
+      <h3 class="section-subheading">User Task 1 (Picking an Outfit from the Digital Closet)</h3>
+      <div class="app-wireframe-grid">
+        <div class="app-wireframe1">
+            <h3 class="app-wireframe-heading">Digital Closet</h3>
+          <img src="..//project4/img/Digital Closet - Closet Page.png" alt="App - Closet Page">
+        </div>
+        <div class="app-wireframe2">
+            <h3 class="app-wireframe-heading">Top Selected</h3>
+          <img src="..//project4/img/Digital Closet - Top Selected.png" alt="App - Top Selected Page">
+        </div>
+        <div class="app-wireframe3">
+            <h3 class="app-wireframe-heading">Pant Selected</h3>
+          <img src="..//project4/img/Digital Closet - Pant Selected.png" alt="App - Pant Selected Page">
+        </div>
+        <div class="app-wireframe4">
+            <h3 class="app-wireframe-heading">Shoes Selected</h3>
+          <img src="..//project4/img/Digital Closet - Shoes Selected.png" alt="Shoes - Top Selected Page">
+        </div>
+        <div class="app-wireframe5">
+          <h3 class="app-wireframe-heading">Outfit View</h3>
+        <img src="..//project4/img/Digital Closet - Outfit View.png" alt="App - Outfit View Page">
+      </div>
+      <div class="app-wireframe6">
+        <h3 class="app-wireframe-heading">Share outfit</h3>
+      <img src="..//project4/img/Digital Closet - Share Outfit.png" alt="App - Share Outfit Page">
+    </div>
+      </div>
+
+      <h3 class="section-subheading">User Task 2 (Adding Clothes to Closet)</h3>
+      <div class="app-wireframe-grid">
+        <div class="app-wireframe1">
+            <h3 class="app-wireframe-heading">Upload/ Take Photo</h3>
+          <img src="..//project4/img/Digital Closet - Upload Photo.png" alt="App - Upload Photo Page">
+        </div>
+        <div class="app-wireframe2">
+            <h3 class="app-wireframe-heading">Take Photo</h3>
+          <img src="..//project4/img/Digital Closet - Take Photo.png" alt="App - Take Photo Page">
+        </div>
+        <div class="app-wireframe3">
+            <h3 class="app-wireframe-heading">Photo Taken</h3>
+          <img src="..//project4/img/Digital Closet - Photo Taken.png" alt="App - Photo Taken Page">
+        </div>
+        <div class="app-wireframe4">
+            <h3 class="app-wireframe-heading">Enter Details</h3>
+          <img src="..//project4/img/Digital Closet - Enter Details.png" alt="App - Enter Item Details Page">
+        </div>
+        <div class="app-wireframe5">
+          <h3 class="app-wireframe-heading">Details Added</h3>
+        <img src="..//project4/img/Digital Closet - Details Added.png" alt="App - Item Details Added Page">
+      </div>
+      <div class="app-wireframe6">
+        <h3 class="app-wireframe-heading">Item Added</h3>
+      <img src="..//project4/img/Digital Closet - Top Added.png" alt="App - Top Added Page">
+    </div>
+      </div>
+
+    <h3 class="section-subheading">User Task 3 (Picking an Outfit from Saved Outfits)</h3>
+    <div class="app-wireframe-grid">
+        <div class="app-wireframe1">
+            <h3 class="app-wireframe-heading">Saved Outfits</h3>
+          <img src="..//project4/img/Digital Closet - Saved Outfits.png" alt="App - Saved Outfits Page">
+        </div>
+        <div class="app-wireframe2">
+            <h3 class="app-wireframe-heading">Outfit Selected</h3>
+          <img src="..//project4/img//Digital Closet - Saved Outfit Chosen.png" alt="App - Saved Outfits Chosen Page">
+        </div>
+        <div class="app-wireframe3">
+            <h3 class="app-wireframe-heading">New Skirt Selected</h3>
+          <img src="..//project4/img/Digital Closet - New Skirt Chosen.png" alt="App - New Skirt Chosen Page">
+        </div>
+        <div class="app-wireframe4">
+            <h3 class="app-wireframe-heading">New Top Selected</h3>
+          <img src="..//project4/img/Digital Closet - New Top Chosen.png" alt="App - New Top Chosen Page">
+        </div>
+        <div class="app-wireframe5">
+          <h3 class="app-wireframe-heading">New Outfit View</h3>
+        <img src="..//project4/img/Digital Closet - New Outfit View.png" alt="App - New Outfit View Page">
+      </div>
+        <div class="app-wireframe6">
+         <h3 class="app-wireframe-heading">Share New Outfit</h3>
+       <img src="..//project4/img/Digital Closet - Share New Outfit.png" alt="App - Share New Outfit Page">
+      </div>
+    </div>
+
+    <h2 class="section-heading">High-Fidelity Website Wireframes</h2>  
+    <div class="web-wireframe-grid">
+      <h3 class="wireframe-heading">Homepage</h3>
+        <img src="..//project4/img/Digital Closet - Hompage.png" alt="Website - Homepage">
+      </div>
+      <div class="web-wireframe-grid">
+      <h3 class="wireframe-heading">Digital Closet Page</h3>
+      <img src="..//project4/img/Digital Closet - Web Closet Page.png" alt="Website - Closet Page">
+    </div>
+    <div class="web-wireframe-grid">
+    <h3 class="wireframe-heading">Saved Outfits Page</h3>
+      <img src="..//project4/img/Digital Closet - Web Saved Outfits.png" alt="Website - Saved Outfits Page">
+    </div>
+
+    <h2 class="section-heading" id="Final-Product">Final Product</h2>
+    <div class="final-product-video">
+        <iframe src="https://www.youtube.com/embed/yLMqg9esjJA?rel=0&;controls=1&;autoplay=1&;mute=0&;start=0" frameborder="0" title="Instagram Final Click-Through"></iframe>
+        </div>
+
+        <div class="button">
+            <a href="#top" class="skip-button">Back to Top</a>
+        </div>
+              
+      </div>
+
+        <div class="footer-wrap">
+    <div class="copyright">Copyright 2023</div>
+    <div>
+      <a href="..//project4/Privacy Policy.html" class="privacy-policy"> Privacy Policy</a>
+    </div>
+    <div id="date-time" class="date-time"></div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/pooja-jain-1573601b8/" class="footer-icon"><img src="..//project4/img/Icon - LinkedIn.png" alt="LinkedIn Icon"></a>
+      <a href="https://github.com/pjain6801" class="footer-icon"><img src="..//project4/img/Icon - Github.png" alt="Github Icon"></a>
+    </div>
+
+
+
+</body>
+
+

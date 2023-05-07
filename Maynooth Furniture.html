@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Pooja Jain, UX, Design, Portfolio">
+  <meta name="keywords" content="Design process and wireframes for an furniture app and website.">
+  <meta name="copyright" content="The Owner">
+  <meta name="author" content="Pooja Jain">
+  <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../project4/css/style.css"> 
+    <link rel="shortcut icon" type="image/x-icon" href="..//project4/img/favicon.png">
+    <style>
+        * {
+            background-color: white;
+        }
+    </style>
+
+<title>Maynooth Furniture Project</title>
+</head>
+<body>
+  <script>
+    // Function to format 1 in 01
+    const zeroFill = n => {
+      return ('0' + n).slice(-2);
+    }
+
+    // Creates interval
+    const interval = setInterval(() => {
+      // Get current time
+      const now = new Date();
+
+      // Format date as in mm/dd/aaaa hh:ii:ss
+      const dateTime = zeroFill((now.getMonth() + 1)) + '/' + zeroFill(now.getUTCDate()) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+      // Display the date and time on the screen using div#date-time
+      document.getElementById('date-time').innerHTML = dateTime;
+    }, 1000);
+  </script>
+ 
+ <header class="navigation w-nav">
+  <div class="navigation-items">
+      <a href="..//project4/index.html" class="logo-link w-brand w--current"><img src="../project4/img/logo-final-.png" width="56" alt=" my initals logo" class="logo-image"></a>
+      <div class="navigation-wrap">
+        <nav role="navigation">
+          <a href="../project4/index.html" class="nav-items w-text w--current">Work</a>
+          <a href="../project4/About page.html" class="nav-items w-text">About</a>
+          <a href="https://github.com/pjain6801" class="nav-items w-text">Code</a>
+          <a href="../project4/Pooja Jain Resume.pdf" class="nav-items w-text">Resume</a>
+          <a href="..//project4/Contact.html" class="nav-items w-text">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+        <img src="..//project4/img/Project pic - Maynooth Furniture.png" class="project-pic" id="top" alt="Maynooth Furniture App & Website Pic">
+        <h1 class="project-heading">Maynooth Furniture</h1>
+        <p class="project-blurb">Website and App for an E-commerce company</p>
+
+        <div class="project-content">
+            <h2 class="section-heading">Project Overview</h2>
+                <h3 class="section-subheading">Personas</h3>
+                <div class="persona-grid">
+                    <div class="persona1">
+                      <img src="..//project4/img/Maynooth - persona 1.jpg" alt="Persona - Katherine">
+                    </div>
+                    <div class="persona-blurb">
+                      <h3 class="persona-name">Katherine</h3>
+                      <p class="content">She is updating the furniture in her 4 bedroom family home. She is looking for traditional style furniture.</p>
+                    </div>   
+                </div>
+                <div class="persona-grid">
+                    <div class="persona1">
+                      <img src="..//project4/img/Maynooth - persona 2.jpeg" alt="Persona - Kyle">
+                    </div>
+                    <div class="persona-blurb">
+                      <h3 class="persona-name">Kyle</h3>
+                      <p class="content">He recently bought a new apartment and is looking for new furniture. He likes modern and contemporary styles.</p>
+                    </div>   
+                </div>
+            <h2 class="section-heading">Design Process</h2>
+                <img src="..//project4/img/Maynooth - Design Process.png" alt="Design Process Diagram">
+                <div class="button">
+                    <a href="#Final-Product" class="skip-button">Skip to Final Project</a>
+                </div>
+            <h2 class="section-heading">Typography and Color Palette</h2>
+                <img src="..//project4/img/Maynooth - Typography & Color-.png" alt="Typography & Color Pic">
+            <h2 class="section-heading">Competitive Analysis</h2>
+                    <p class="content">To make this Furniture e-commerce website the most efficient and user friendly, I researched competing stores websites to see 
+                        what types of features and elements they have implemented.</p>
+                    <img src="..//project4/img/Maynooth - Competitive Analysis.png" alt="Competitive Analysis pic - features from other websites">
+            
+            <h2 class="section-heading">Low Fidelity Wireframe</h2>
+                    <img src="..//project4/img/Maynooth - Low Fidelity Wireframes.png" alt="Low Fidelity Website Wireframe Pic">
+            
+            <h2 class="section-heading">Website High Fidelity Mockup</h2>
+                    <div class="wireframe-grid">
+                        <div class="wireframe1">
+                            <h3 class="wireframe-heading">Homepage</h3>
+                          <img src="..//project4/img/Maynooth - Homepage.jpg" alt="Maynooth Website - Homepage pic">
+                        </div>
+                        <div class="wireframe2">
+                            <h3 class="wireframe-heading">Category Page</h3>
+                          <img src="..//project4/img/Maynooth - Category Page.jpg" alt="Maynooth Website - Category Page pic">
+                        </div>
+                        <div class="wireframe3">
+                            <h3 class="wireframe-heading">Product Page</h3>
+                          <img src="..//project4/img/Maynooth - Product Page.jpg" alt="Maynooth Website - Product Page pic">
+                        </div>
+                      </div>
+                      <div class="wireframe-grid">
+                        <div class="wireframe1">
+                            <h3 class="wireframe-heading">Product Selected Page Page</h3>
+                          <img src="..//project4/img/Maynooth Product Selected.jpg" alt="Maynooth Website - Product Selected Page pic">
+                        </div>
+                        <div class="wireframe2">
+                            <h3 class="wireframe-heading">Cart Page</h3>
+                          <img src="..//project4/img/Maynooth - Cart .jpg" alt="Maynooth Website - Cart Page pic">
+                        </div>
+                        <div class="wireframe3">
+                            <h3 class="wireframe-heading">Contact Us Page</h3>
+                          <img src="..//project4/img/Maynooth - Contact Us.jpg" alt="Maynooth Website - Contact Us Page pic">
+                        </div>
+                      </div>
+                
+            <h2 class="section-heading">Design Elements</h2>
+                <div class="elements-grid">
+                    <div class="element1">
+                      <img src="..//project4/img/Maynooth - Element 1.png" alt="Website Design Element - Wishlist Feature Pic">
+                    </div>
+                    <div class="element-blurb">
+                      <h3 class="element-name">Wishlist</h3>
+                      <p class="content">Based on the findings, all the competitors have a wishlist button so customers can save items they like in a different 
+                        location other than their cart. I created a heart shaped Wishlist button in the top right hand corner of each product.</p>
+                    </div>   
+                </div>
+                <div class="elements-grid">
+                    <div class="element1">
+                      <img src="..//project4/img/Maynooth - Element 2.png" alt="Website Design Element - New Items/Clearance Tag Pic">
+                    </div>
+                    <div class="element-blurb">
+                      <h3 class="element-name">New Items/ Clearance Tags</h3>
+                      <p class="content">New Items/ Clearance Tags
+                        Based on the competitive analysis findings, I applied the New items and Clearance tags to my design. This will not only help users 
+                        distinguish between the different types of items but also create an alternative and efficient user flow.</p>
+                    </div>   
+                </div>
+                <div class="elements-grid">
+                    <div class="element1">
+                      <img src="..//project4/img/Maynooth - Element 3.png alt="Website Design Element - Quickview Feature Pic" >
+                    </div>
+                    <div class="element-blurb">
+                      <h3 class="element-name">Quickview</h3>
+                      <p class="content">In my design of the product page, I added a quick view button. This will allow customers to look at a product as a quick 
+                        preview and return to their previous screen with ease. Placing the button in the middle lets the customers view it easily.</p>
+                    </div>   
+                </div>
+                <div class="elements-grid">
+                    <div class="element1">
+                      <img src="..//project4/img/Maynooth - Element 4.png" alt="Website Design Element - Landuage Dropdown Pic">
+                    </div>
+                    <div class="element-blurb">
+                      <h3 class="element-name">Language Dropdown</h3>
+                      <p class="content">To diversify this website more, I added a change language drop down menu in a visible spot. This makes it more accessible 
+                        for those who wish to change the language. It also broadens the users for this website.</p>
+                    </div>   
+                </div>
+
+            <h2 class="section-heading">App High Fidelity Mockup</h2>
+            <div class="wireframe-grid">
+                <div class="wireframe1">
+                    <h3 class="wireframe-heading">Onboarding Screen #1</h3>
+                  <img src="..//project4/img/Maynooth - Onboarding Screen 1.png" alt="Maynooth App - Onboarding Screen 1">
+                </div>
+                <div class="wireframe2">
+                    <h3 class="wireframe-heading">Onboarding Screen #2</h3>
+                  <img src="..//project4/img/Maynooth - Onboarding Screen 2.png" alt="Maynooth App - Onboarding Screen 2">
+                </div>
+                <div class="wireframe3">
+                    <h3 class="wireframe-heading">Onboarding Screen #3</h3>
+                  <img src="..//project4/img/Maynooth - Onboarding Screen 3.png" alt="Maynooth App - Onboarding Screen 3">
+                </div>
+              </div>
+              <div class="wireframe-grid">
+                <div class="wireframe1">
+                    <h3 class="wireframe-heading">Homepage</h3>
+                  <img src="..//project4/img/Maynooth - App Homepage .png" alt="Maynooth App - Homepage">
+                </div>
+                <div class="wireframe2">
+                    <h3 class="wireframe-heading">Wishlist Page</h3>
+                  <img src="..//project4/img/Maynooth - App Wishlist Page.png" alt="Maynooth App - Wishlist Page">
+                </div>
+                <div class="wireframe3">
+                    <h3 class="wireframe-heading">Account Page</h3>
+                  <img src="..//project4/img/Maynooth - App Account Page .png" alt="Maynooth App - Account Page">
+                </div>
+                <div class="wireframe4">
+                    <h3 class="wireframe-heading">Cart Page</h3>
+                  <img src="..//project4/img/Maynooth - App Cart Page.png" alt="Maynooth App - Cart Page">
+                </div>
+              </div>
+              <div class="wireframe-grid">
+                <div class="wireframe1">
+                    <h3 class="wireframe-heading">Shop Page</h3>
+                  <img src="..//project4/img/Maynooth - App Shop Page.png" alt="Maynooth App - Shop Page">
+                </div>
+                <div class="wireframe2">
+                    <h3 class="wireframe-heading">Category Page</h3>
+                  <img src="..//project4/img/Maynooth - App Category Page.png" alt="Maynooth App - Category Page">
+                </div>
+                <div class="wireframe3">
+                    <h3 class="wireframe-heading">Product Page</h3>
+                  <img src="..//project4/img/Maynooth - App Product Page.png" alt="Maynooth App - Product Page">
+                </div>
+                <div class="wireframe4">
+                    <h3 class="wireframe-heading">Product Selected Page</h3>
+                  <img src="..//project4/img/Maynooth - App Product Selected Page.png" alt="Maynooth App - Product Selected Page"> 
+                </div>
+              </div>
+
+
+                <h2 class="section-heading" id="Final-Product">Final Products</h2>
+                <div class="final-product-video">
+                    <iframe src=" https://www.youtube.com/embed/n90ey7DX3yw?rel=0&;controls=1&;autoplay=1&;mute=0&;start=0" frameborder="0" title="Pre Usabiity Spotify"></iframe>
+                    </div>
+                    
+                     <div class="button">
+                        <a href="#top" class="skip-button">Back to Top</a>
+                    </div>
+                
+        </div>
+
+        <div class="footer-wrap">
+          <div class="copyright">Copyright 2023</div>
+          <div>
+            <a href="..//project4/Privacy Policy.html" class="privacy-policy"> Privacy Policy</a>
+          </div>
+          <div id="date-time" class="date-time"></div>
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/pooja-jain-1573601b8/" class="footer-icon"><img src="..//project4/img/Icon - LinkedIn.png" alt="LinkedIn Icon"></a>
+            <a href="https://github.com/pjain6801" class="footer-icon"><img src="..//project4/img/Icon - Github.png" alt="Github Icon"></a>
+          </div>
+      
+
+
+
+</body>

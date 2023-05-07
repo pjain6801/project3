@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Pooja Jain, UX, Design, Portfolio">
+  <meta name="keywords" content="Mobile Programming internship projects">
+  <meta name="copyright" content="The Owner">
+  <meta name="author" content="Pooja Jain">
+  <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../project4/css/style.css"> 
+    <link rel="shortcut icon" type="image/x-icon" href="..//project4/img/favicon.png">
+
+
+<title>Mobile Programming Project</title>
+<style> 
+*{ background-color: white;
+}
+</style>
+</head>
+<body>
+
+  <script>
+    // Function to format 1 in 01
+    const zeroFill = n => {
+      return ('0' + n).slice(-2);
+    }
+
+    // Creates interval
+    const interval = setInterval(() => {
+      // Get current time
+      const now = new Date();
+
+      // Format date as in mm/dd/aaaa hh:ii:ss
+      const dateTime = zeroFill((now.getMonth() + 1)) + '/' + zeroFill(now.getUTCDate()) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+      // Display the date and time on the screen using div#date-time
+      document.getElementById('date-time').innerHTML = dateTime;
+    }, 1000);
+  </script>
+  
+  <header class="navigation w-nav">
+    <div class="navigation-items">
+        <a href="..//project4/index.html" class="logo-link w-brand w--current"><img src="../project4/img/logo-final-.png" width="56" alt=" my initals logo" class="logo-image"></a>
+        <div class="navigation-wrap">
+          <nav role="navigation">
+            <a href="../project4/index.html" class="nav-items w-text w--current">Work</a>
+            <a href="../project4/About page.html" class="nav-items w-text">About</a>
+            <a href="https://github.com/pjain6801" class="nav-items w-text">Code</a>
+            <a href="../project4/Pooja Jain Resume.pdf" class="nav-items w-text">Resume</a>
+            <a href="..//project4/Contact.html" class="nav-items w-text">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <img src="..//project4/img/Project pic - Mobile Programming.png" class="project-pic" alt="Mobile Programming Projects - App & Website Pics">
+    <h1 class="project-heading">Mobile Programming Internship</h1>
+    
+    <div class="project-content">
+      <h2 class="section-heading">Project 1: Commmunication Design (Incyte)</h2>
+      <h3 class="section-subheading">Project Overview</h3>
+        <p class="content"> Our client, Incyte, is a global biopharmaceutical that is conducting a clinical trial for treating Vitiligo. 
+        Our team created a machine learning algorithm for the client that will use Vitiligo patients' skin photos to provide 
+        patients feedback on their condition.
+          <br><br>
+        Our team was brought in for 2 major reasons:</p>
+       <p class="content"> 1) Create a brochure which will be distributed to Vitiligo patients encouraging them to take pictures of their skin. 
+          <br> 2) Create an app for the patients to take those pictures and help them track their condition improvements.</p>
+      <h3 class="section-subheading">Design Principles</h3>
+
+      <div class="principles-grid">
+        <div class="principle1">
+          <h4 class="principle-heading">Information Hierarchy:</h4>
+          <p class="content">‍In addition to being provided with informational content for the brochure, I also generated content through doing company research. 
+            I thought of this brochure as a information architecture design problem. I structured pieces of information as bullet points and small paragraphs to 
+            make it easily consumable to readers and utilized white space to break up the content visually on the page. It was an iterative process to design the 
+            information in the most effective way for consumption.</p>
+        </div>
+        <div class="principle2">
+          <h4 class="principle-heading">Progressive Disclosure:</h4>
+          <p class="content">The organizational structure of of a brochure fully embraces the importance of progressive disclosure. I took advantage of the brochure 
+            format by putting a 'hook' statement on the front page. After the reader opens the pamphlet, their eyes would be drawn to the the numbers written with 
+            a pop of purple. The color contrast and surrounding white space will catch the readers attention as they navigate the content. </p>
+        </div>
+      </div>
+      <div class="two-pg-grid">
+        <div class="pg1">
+          <img src="..//project4/img/Trifold-pg-1.png" alt="Trifold Page 1">
+        </div>
+        <div class="pg2">
+          <img src="..//project4/img/Trifold-pg-2.png" alt="Trifold Page 2">
+        </div>
+      </div>
+      
+      <h3 class="section-subheading">App Design</h3>
+      <p class="content"> I was then tasked to create mid-fidelity screens of a patient-facing app to help patients track improvements in their skin conditions. 
+        This app includes features of finding a doctor, chatting with a doctor, and reviewing patient's improvement.</p>
+
+        <div class="app-grid">
+          <div class="app-pic1">
+            <img src="..//project4/img/Incyte App - Landing pg.png" alt="Incyte App - Landing Page">
+          </div>
+          <div class="app-pic2">
+            <img src="..//project4/img/Incyte App - Signup pg.png" alt="Incyte App - Signup Page">
+          </div>
+          <div class="app-pic3">
+            <img src="..//project4/img/Incyte App - Login pg.png" alt="Incyte App - Login Page">
+          </div>
+          <div class="app-pic4">
+            <img src="..//project4/img/Incyte App - Home pg .png" alt="Incyte App - Home Page">
+          </div>
+        </div>
+
+        <div class="app-grid">
+          <div class="app-pic1">
+            <img src="..//project4/img/Incyte App - camera pg.png" alt="Incyte App - Camera Page">
+          </div>
+          <div class="app-pic2">
+            <img src="..//project4/img/Incyte App - Camera 2 pg.png" alt="Incyte App - Camera 2 Page">
+          </div>
+          <div class="app-pic3">
+            <img src="..//project4/img/Incyte App - Camera 3 pg.png" alt="Incyte App - Camera 3 Page">
+          </div>
+          <div class="app-pic4">
+            <img src="..//project4/img/Incyte App - Camera 4 pg.png" alt="Incyte App - Camera 4 Page">
+          </div>
+        </div>
+
+        <div class="app-grid">
+          <div class="app-pic1">
+            <img src="..//project4/img/Incyte App - New home pg.png" alt="Incyte App - New Home Page">
+          </div>
+          <div class="app-pic2">
+            <img src="..//project4/img/Incyte App - Doc Search pg.png" alt="Incyte App - Doctor Search Page">
+          </div>
+          <div class="app-pic3">
+            <img src="..//project4/img/Incyte App - Doc Results pg.png" alt="Incyte App - Doctor Results Page">
+          </div>
+          <div class="app-pic4">
+            <img src="..//project4/img/Incyte App - Doc Chat pg.png" alt="Incyte App - Doctor Chat Page">
+          </div>
+        </div>
+
+      <h2 class="section-heading">Project 2: Mobile App Design</h2>
+      <h3 class="section-subheading">Project Overview</h3>
+      <p class="content">This client, Mclane Xpress, is an online wholesaler company. In effort to sign them on, I created initial screens of what their mobile 
+        app could look like if they worked with us. I created a mobile app design based on their desktop website to ensure consistency with their design system. 
+        I added a scanner feature that would be used by their employees and improve their workflow efficiency.</p>
+
+        <div class="app-grid">
+          <div class="app-pic1">
+            <img src="..//project4/img/McLane App - Sign-in.png" alt="Mclane App - Sign in page">
+          </div>
+          <div class="app-pic2">
+            <img src="..//project4/img/McLane App - Home.png" alt="alt="Mclane App - Home page"">
+          </div>
+          <div class="app-pic3">
+            <img src="..//project4/img/McLane App - Category Selected.png" alt="McLane App - Category Selected Page">
+          </div>
+          <div class="app-pic4">
+            <img src="..//project4/img/McLane App - Category Selected 2.png" alt="McLane App - Category Selected 2 Page">
+          </div>
+        </div>
+
+        <div class="app-grid">
+          <div class="app-pic1">
+            <img src="..//project4/img/McLane App - Product Selected.png" alt="McLane App - Product Selected Page">
+          </div>
+          <div class="app-pic2">
+            <img src="..//project4/img/McLane App - Cart.png" alt="McLane App - Cart Page">
+          </div>
+          <div class="app-pic3">
+            <img src="..//project4/img/McLane App - Checkout.png" alt="McLane App - Checkout Page">
+          </div>
+          <div class="app-pic4">
+            <img src="..//project4/img/McLane App - Scan Product.png" alt="McLane App - Scan Product Page">
+          </div>
+        </div>
+
+      <h2 class="section-heading">Project 3: Data Dashboard Design</h2>
+        <h3 class="section-subheading">Project Overview</h3>
+         <p class="content">Our client, Genmab, is an international biotechnology company that wanted to create a dashboard interface for all their employees. 
+          After speaking to multiple stakeholders, I learned that they wanted a website where all of the software and applications their employees use could be 
+          in one place with a single sign-on feature. I also learned that website would have an employee and admin functionality. In the admin side, they would 
+          be given control over adding or editing applications, user management and adding updates or announcements.</p>
+  
+        <h3 class="section-subheading">Design Principles</h3>
+        <div class="principles-grid">
+          <div class="principle1">
+            <h4 class="principle-heading">Information Hierarchy:</h4>
+            <p class="content">‍‍I worked with the design team in the ideation process of designing the screens. I branched out off their designs with slight 
+              modifications to present to our client. I created a top navigation bar so the user can easily access all the apps. On the right I made a calendar 
+              feature for the user to stay on top of upcoming meetings. The rest of the screen displays snapshots of important data that's relevant to the user.</p>
+          </div>
+          <div class="principle2">
+            <h4 class="principle-heading">Consistent Design Identity:</h4>
+            <p class="content">I also made sure to use a consistent design identity for both versions of the interface, but enough contrast so that the admin and 
+              employee versions are different. </p>
+          </div>
+        </div>
+
+        <div class="two-pg-grid">
+          <div class="pg1">
+            <img src="..//project4/img/Genmab - Homepage.png" alt="Genmab Website - Homepage">
+          </div>
+          <div class="pg2">
+            <img src="..//project4/img/Genmab - Admin Console 1.png" alt="Genmab Website - Admin Console - User Links">
+          </div>
+        </div>
+        <div class="two-pg-grid">
+          <div class="pg1">
+            <img src="..//project4/img/Genmab - Admin Console 2.png" alt="Genmab Website - Admin Console - User Managment">
+          </div>
+          <div class="pg2">
+            <img src="..//project4/img/Genmab - Admin Console 3.png" alt="Genmab Website - Admin Console - Updates">
+          </div>
+        </div>
+
+        <h2 class="section-heading">Project 4: Communication Design (Mobile Programming)</h2>
+        <h3 class="section-subheading">Project Overview</h3>
+         <p class="content">I was tasked to create a multi-page pamphlet about our company. The purpose of the pamphlet was to replace slide decks which were used 
+          in meetings with new clients. My goal was to create an overall pamphlet structure that breaks down three things: who we are, what services we provide, 
+          and why should potential clients choose us. After the main pamphlet was made, I was then tasked to create additional pamphlets that were centered around 
+          our industries of expertise, for example Healthcare, Banking and Finance, and Pharma.</p>
+
+          <h3 class="section-subheading">Design Principles</h3>
+          <div class="principles-grid">
+            <div class="principle1">
+              <h4 class="principle-heading">Emphasis:</h4>
+              <p class="content">‍‍I created emphasis by using geometric lines and shapes to draw the user's attention towards information. For example, the first 
+                page has a hang reaching up to the clouds, which carry two chunks of content. The color contrast between different parts of the page also helps put 
+                emphasis.</p>
+            </div>
+            <div class="principle2">
+              <h4 class="principle-heading">Pattern:</h4>
+              <p class="content">I used different spatial forms in the same way to create a pattern. For example, the repeated use of hexagonal icons adds variety 
+                to the page, sparking the readers' interest towards that content. I also used the color pattern of grey and blue hroughout the pamphlet. </p>
+            </div>
+          </div>
+
+          <div class="three-pg-grid">
+            <div class="pg1">
+              <img src="..//project4/img/MP Brochure - Pg 1.png" alt="Mobile Programming Brochure - Page 1">
+            </div>
+            <div class="pg2">
+              <img src="..//project4/img/MP Brochure - Pg 2.png" alt="Mobile Programming Brochure - Page 2">
+            </div>
+            <div class="pg3">
+              <img src="..//project4/img/MP Brochure - Pg 3.png" alt="Mobile Programming Brochure - Page 3>
+            </div>
+          </div>
+          <div class="three-pg-grid">
+            <div class="pg1">
+              <img src="..//project4/img/MP Brochure - Pg 4.png" alt="Mobile Programming Brochure - Page 4>
+            </div>
+            <div class="pg2">
+              <img src="..//project4/img/MP Brochure - Pg 5.png" alt="Mobile Programming Brochure - Page 5>
+            </div>
+            <div class="pg3">
+              <img src="..//project4/img/MP Brochure - Pg 6.png" alt="Mobile Programming Brochure - Page 6>
+            </div>
+          </div>
+
+    </div>
+    
+
+       
+
+
+    <div class="footer-wrap">
+      <div class="copyright">Copyright 2023</div>
+      <div>
+        <a href="..//project4/Privacy Policy.html" class="privacy-policy"> Privacy Policy</a>
+      </div>
+      <div id="date-time" class="date-time"></div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/pooja-jain-1573601b8/" class="footer-icon"><img src="..//project4/img/Icon - LinkedIn.png" alt="LinkedIn Icon"></a>
+        <a href="https://github.com/pjain6801" class="footer-icon"><img src="..//project4/img/Icon - Github.png" alt="Github Icon"></a>
+      </div>
+
+</body>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Pooja Jain, UX, Design, Portfolio">
+  <meta name="keywords" content="Design process and wireframes for a redesign of Instagram.">
+  <meta name="copyright" content="The Owner">
+  <meta name="author" content="Pooja Jain">
+  <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../project4/css/style.css"> 
+    <link rel="shortcut icon" type="image/x-icon" href="..//project4/img/favicon.png">
+    <style>
+        * {
+            background-color: white;
+        }
+    </style>
+
+<title>Insta Redesign Project</title>
+</head>
+<body>
+
+  <script>
+    // Function to format 1 in 01
+    const zeroFill = n => {
+      return ('0' + n).slice(-2);
+    }
+
+    // Creates interval
+    const interval = setInterval(() => {
+      // Get current time
+      const now = new Date();
+
+      // Format date as in mm/dd/aaaa hh:ii:ss
+      const dateTime = zeroFill((now.getMonth() + 1)) + '/' + zeroFill(now.getUTCDate()) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+      // Display the date and time on the screen using div#date-time
+      document.getElementById('date-time').innerHTML = dateTime;
+    }, 1000);
+  </script>
+
+<header class="navigation w-nav">
+  <div class="navigation-items">
+      <a href="..//project4/index.html" class="logo-link w-brand w--current"><img src="../project4/img/logo-final-.png" width="56" alt=" my initals logo" class="logo-image"></a>
+      <div class="navigation-wrap">
+        <nav role="navigation">
+          <a href="../project4/index.html" class="nav-items w-text w--current">Work</a>
+          <a href="../project4/About page.html" class="nav-items w-text">About</a>
+          <a href="https://github.com/pjain6801" class="nav-items w-text">Code</a>
+          <a href="../project4/Pooja Jain Resume.pdf" class="nav-items w-text">Resume</a>
+          <a href="..//project4/Contact.html" class="nav-items w-text">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+    
+        <img src="..//project4/img/Project pic - Insta Redesign.png" class="project-pic" id="top" alt="Instagram App Redesign Pic">
+        <h1 class="project-heading">Instagram Redesign</h1>
+        <p class="project-blurb"></p>
+
+        <div class="project-content">
+            <h2 class="section-heading">Project Overview</h2>
+                <h3 class="section-subheading">Challenges</h3>
+                    <p class="content">While using Spotify, I noticed that there was no feature that allows you to mix multiple playlists. Users have to switch 
+                        between playlists manually. They cannot simply shuffle multiple playlists to suit their listening preferences at a given time. </p> 
+                 <h3 class="section-subheading">Objective</h3>
+                    <p class="content">1. Re-design Instagram to be more inclusive
+                    <br> 2. Ignite an engaging experience</p>
+                <div class="button">
+                    <a href="#Final-Product" class="skip-button">Skip to Final Project</a>
+                </div>
+            <h2 class="section-heading">Research</h2>
+                <h3 class="section-subheading">Research Questions</h3>
+                    <p class="content">What are current attitudes towards Instagram?
+                    <br> Which features do users currently use on Instagram?</p>
+                <h3 class="section-subheading">Research Method</h3>
+                    <p class="content">I decided to use a survey as our research method because it is the best medium to use when asking Instagram users questions. 
+                        Also my research questions will create multiple choice and short responses rather than detailed and open-ended responses.</p>
+                    <img src="..//project4/img/Insta Redesign - Research.png" class="research-pic" alt="Research Pic - Charts and Diagrams">
+                <h3 class="section-subheading">Key Findings</h3>
+                    <p class="content">The research shows that participants that rated their contentedness lower than 6 mostly found Instagram boring or negative. 
+                        23 of the 30 participants use direct messaging at least once a week. IGTV, likes/comments, and direct messaging were the least favorite 
+                        features.
+                        <br><br>
+                        It was evident there was scope for re-designing certain parts of Instagram to create a more engaging and positive experience.
+                    </p>
+                <h2 class="section-heading">Screens</h2>
+                <div class="screen-grid">
+                    <div class="screen1">
+                      <img src="..//project4/img/Insta Redesign - Feed Screen.png" alt="Insta Old & Current Feed Screen Pic">
+                    </div>
+                    <div class="screen-blurb">
+                      <h3 class="screen-name">Feed Screen</h3>
+                      <p class="content">Based on the research, most users did not favor likes. The concept of likes also creates a competitive environment between 
+                        users, where their focus shifts from enjoying their friend's posts to beating their friend's likes. To decrease this negative competition I 
+                        designed a Feed Page where the number of likes a post has is private. The user that has posted the content can still see how many people 
+                        liked their content, however, others cannot see this information.</p>
+                    </div>   
+                  </div>
+                <div class="screen-grid">
+                    <div class="screen1">
+                      <img src="..//project4/img/Insta Redesign - Commenting:DM Screen.png" alt="Insta Old & Current DM/Commenting Screen Pic">
+                    </div>
+                    <div class="screen-blurb">
+                      <h3 class="screen-name">Commenting/DM Screen</h3>
+                      <p class="content">When a user decides to comment on a post, it brings them to their direct messages with that user. This change in the 
+                        feature will allow for more private and authentic conversations to take place rather than short public comments such as "nice pic". This 
+                        will overall improve users' feeling towards Instagram from boring, fake, and a waste of time to engaging and fun.</p>
+                    </div>   
+                  </div>
+                <div class="screen-grid">
+                    <div class="screen1">
+                      <img src="..//project4/img/Insta Redesign - Other User's Profile Screen.png" alt="Insta Old & Current Other User's Profile Screen Pic">
+                    </div>
+                    <div class="screen-blurb">
+                      <h3 class="screen-name">Other User's Profile Screen</h3>
+                      <p class="content">According to my research, most users value their mutual friends. The follower/ following count can also cause an unhealthy 
+                        competition between users. Therefore, I deleted the follower/ following count and replaced it with a mutual friends count because my 
+                        research suggested people follow others based on mutual friends.</p>
+                    </div>   
+                  </div>
+                  
+                <h2 class="section-heading">Usability Testing</h2>
+                      <p class="content">After conducting usability testing with 8 Spotify users, I found two usability issues that I fixed. One issue was that the 
+                        'select' button was hard for users to locate. Therefore, I made the button larger and changed the color to increase contrast.
+                      <br><br>The second problem was that when users selected a playlist, they tried to click on the title, album, or blank space. Therefore, I made it 
+                      all clickable to create a user-friendly experience.</p>
+
+                <h2 class="section-heading" id="Final-Product">Final Product</h2>
+                <div class="final-product-video">
+                    <iframe src="https://www.youtube.com/embed/urJIysNtS2c?rel=0&;controls=1&;autoplay=1&;mute=0&;start=0" frameborder="0" title="Instagram Final Click-Through"></iframe>
+                    </div>
+
+                     <div class="button">
+                        <a href="#top" class="skip-button">Back to Top</a>
+                    </div>
+                
+        </div>
+
+
+        <div class="footer-wrap">
+          <div class="copyright">Copyright 2023</div>
+          <div>
+            <a href="..//project4/Privacy Policy.html" class="privacy-policy"> Privacy Policy</a>
+          </div>
+          <div id="date-time" class="date-time"></div>
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/pooja-jain-1573601b8/" class="footer-icon"><img src="..//project4/img/Icon - LinkedIn.png" alt="LinkedIn Icon"></a>
+            <a href="https://github.com/pjain6801" class="footer-icon"><img src="..//project4/img/Icon - Github.png" alt="Github Icon"></a>
+          </div>
+      
+
+
+
+</body>
+
+

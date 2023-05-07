@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Pooja Jain, UX, Design, Portfolio">
+  <meta name="keywords" content="Design process and wireframes a website - WYR.">
+  <meta name="copyright" content="The Owner">
+  <meta name="author" content="Pooja Jain">
+  <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../project4/css/style.css"> 
+    <link rel="shortcut icon" type="image/x-icon" href="..//project4/img/favicon.png">
+    <style>
+        * {
+            background-color: white;
+        }
+    </style>
+
+<title>WYR Project</title>
+</head>
+<body>
+
+	<script>
+        // Function to format 1 in 01
+        const zeroFill = n => {
+          return ('0' + n).slice(-2);
+        }
+    
+        // Creates interval
+        const interval = setInterval(() => {
+          // Get current time
+          const now = new Date();
+    
+          // Format date as in mm/dd/aaaa hh:ii:ss
+          const dateTime = zeroFill((now.getMonth() + 1)) + '/' + zeroFill(now.getUTCDate()) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+    
+          // Display the date and time on the screen using div#date-time
+          document.getElementById('date-time').innerHTML = dateTime;
+        }, 1000);
+      </script>
+
+<header class="navigation w-nav">
+  <div class="navigation-items">
+      <a href="..//project4/index.html" class="logo-link w-brand w--current"><img src="../project4/img/logo-final-.png" width="56" alt=" my initals logo" class="logo-image"></a>
+      <div class="navigation-wrap">
+        <nav role="navigation">
+          <a href="../project4/index.html" class="nav-items w-text w--current">Work</a>
+          <a href="../project4/About page.html" class="nav-items w-text">About</a>
+          <a href="https://github.com/pjain6801" class="nav-items w-text">Code</a>
+          <a href="../project4/Pooja Jain Resume.pdf" class="nav-items w-text">Resume</a>
+          <a href="..//project4/Contact.html" class="nav-items w-text">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+    
+    <img src="..//project4/img/Project pic - WYR.png" class="project-pic" id="top" alt="WYR Website Pic">
+    <h1 class="project-heading">WYR</h1>
+    <p class="project-blurb">An informational tool that integrates multi-platform data to help students learn about and choose classes.</p>
+    
+    <div class="project-content">
+        <h2 class="section-heading">Project Overview</h2>
+            <p class="content"> Based on the market and preliminary research, we found that students feel that they do not have adequate resources and information when 
+                they are choosing classes and professors. While students have platforms like the school's course catalog/ descriptions, rate my professor and reddit 
+                they want a platform where they can access all this information at once. This led to our ideation process where we designed mockups for a website that 
+                consolidated all the data from these platforms.
+            <br><br>
+                Project Length: 6 months
+          <br>
+                Role: UX Designer
+          <br>
+                Design Team Size: 9 people</p>
+
+        <h2 class="section-heading">Color Palette</h2>
+            <img src="..//project4/img/WYR - Color Palette.png" alt="Photo of Color Palette">
+    
+        <h2 class="section-heading">Market Research</h2>
+            <img src="..//project4/img/WYR - Market Research.png" alt="Market Research Pic - Chart of Pros and Cons of Competitor Sites">
+
+        <h2 class="section-heading">High-Fidelity Wireframe</h2>
+        <h3 class="wireframe-heading">Searching for Classes Page</h3>
+            <img src="..//project4/img/WYR - Classes Search.png" alt="Wireframe of Searching for Classes Page">
+
+        <h3 class="wireframe-heading">Class Selected Page</h3>
+            <img src="..//project4/img/WYR - Overall Class Page.png" alt="Wireframe of Class Selected Page">
+            
+        <h3 class="wireframe-heading">Write a Review Page</h3>
+            <img src="..//project4/img/WYR - Write a Review.png" alt="Wireframe of Write a Review Page">
+      
+        <div class="button">
+                <a href="#top" class="skip-button">Back to Top</a>
+        </div>
+    </div>
+
+    <div class="footer-wrap">
+        <div class="copyright">Copyright 2023</div>
+        <div>
+          <a href="..//project4/Privacy Policy.html" class="privacy-policy"> Privacy Policy</a>
+        </div>
+        <div id="date-time" class="date-time"></div>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/pooja-jain-1573601b8/" class="footer-icon"><img src="..//project4/img/Icon - LinkedIn.png" alt="LinkedIn Icon"></a>
+          <a href="https://github.com/pjain6801" class="footer-icon"><img src="..//project4/img/Icon - Github.png" alt="Github Icon"></a>
+        </div>
+
+</body>

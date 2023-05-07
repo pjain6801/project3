@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Pooja Jain, UX, Design, Portfolio">
+  <meta name="keywords" content="Design process and wireframes for an feature for Spotify.">
+  <meta name="copyright" content="The Owner">
+  <meta name="author" content="Pooja Jain">
+  <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../project4/css/style.css"> 
+    <link rel="shortcut icon" type="image/x-icon" href="..//project4/img/favicon.png">
+    <style>
+        * {
+            background-color: white;
+        }
+    </style>
+
+<title>Spotify Playlist Mixer Project</title>
+</head>
+<body>
+
+  <script>
+    // Function to format 1 in 01
+    const zeroFill = n => {
+      return ('0' + n).slice(-2);
+    }
+
+    // Creates interval
+    const interval = setInterval(() => {
+      // Get current time
+      const now = new Date();
+
+      // Format date as in mm/dd/aaaa hh:ii:ss
+      const dateTime = zeroFill((now.getMonth() + 1)) + '/' + zeroFill(now.getUTCDate()) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+      // Display the date and time on the screen using div#date-time
+      document.getElementById('date-time').innerHTML = dateTime;
+    }, 1000);
+  </script>
+
+<header class="navigation w-nav">
+  <div class="navigation-items">
+      <a href="..//project4/index.html" class="logo-link w-brand w--current"><img src="../project4/img/logo-final-.png" width="56" alt=" my initals logo" class="logo-image"></a>
+      <div class="navigation-wrap">
+        <nav role="navigation">
+          <a href="../project4/index.html" class="nav-items w-text w--current">Work</a>
+          <a href="../project4/About page.html" class="nav-items w-text">About</a>
+          <a href="https://github.com/pjain6801" class="nav-items w-text">Code</a>
+          <a href="../project4/Pooja Jain Resume.pdf" class="nav-items w-text">Resume</a>
+          <a href="..//project4/Contact.html" class="nav-items w-text">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+        <img src="..//project4/img/Project pic - Spotify Playlist Mixer.png" class="project-pic" id="top" alt="Spotify Playlist Mizer Feature (in App) Pic">
+        <h1 class="project-heading">Spotify Playlist Mixer</h1>
+        <p class="project-blurb">Built around Spotify's design principles that empowers users to personalize and diversify their music</p>
+
+        <div class="project-content">
+            <h2 class="section-heading">Project Overview</h2>
+                <h3 class="section-subheading">Challenges</h3>
+                    <p class="content">While using Spotify, I noticed that there was no feature that allows you to mix multiple playlists. Users have to switch 
+                        between playlists manually. They cannot simply shuffle multiple playlists to suit their listening preferences at a given time.</p>
+                 <h3 class="section-subheading">Objective</h3>
+                    <p class="content">1. Create a feature that allows users to mix/ shuffle playlists
+                    <br> 2. Promote individualized music and give users more control</p>
+                <div class="button">
+                    <a href="#Final-Product" class="skip-button">Skip to Final Project</a>
+                </div>
+            <h2 class="section-heading">Research</h2>
+                <h3 class="section-subheading">Research Questions</h3>
+                    <p class="content">How do users engage with Spotify's current playlist features?
+                    <br> How do users diversify and adapt playlists to their preferences?</p>
+                <h3 class="section-subheading">Research Method</h3>
+                    <p class="content">We used surveys as our method of research because we wanted to reach the most amount of users. Our target user audience age 
+                        range (17-26) overlapped with Instagram's users, making Instagram the ideal platform to deliver our survey. Because Instagram posts and 
+                        stories hold people's attention for a brief amount of time, I chose a quick survey method on Instagram to engage with target users.</p>
+                    <img src="..//project4/img/Spotify - Research.png" class="research-pic" alt="Research Pic -  Graphs and Diagrams">
+                <h3 class="section-subheading">Discussion</h3>
+                    <p class="content">My research confirmed the user need for a feature that combines playlists. The data shows that users frequently change their 
+                        playlists, which can become distracting. 90% of the participants shuffle their playlists, so designing a sophisticated shuffle feature would 
+                        benefit this large group of users.</p>
+                <h2 class="section-heading">Product Vision</h2>
+
+                <div class="product-vision-grid">
+                    <div class="vision1">
+                      <img src="..//project4/img/Product Vision pic 1 .png" alt="Product Vision 1 - Interactivity (pic of touch screen)">
+                      <h5>Interactivity</h5>
+                      <p class="vision-blurb">Helps users visualize how they want to build their unique Playlist Mixer.</p>
+                    </div>
+                    <div class="vision2">
+                      <img src="..//project4/img/Product Vision - pic 2.png" alt="Product Vision 2 - User Control (pic of eye)>
+                      <h5>User Control</h5>
+                      <p class="vision-blurb"> Users can control the exact content of their playlist mixer.</p>
+                    </div>
+                    <div class="vision3">
+                      <img src="..//project4/img/Product Vision - pic 3 .png" alt="Product Vision 3 - Interactivity (pic of user)>  
+                      <h5>Personalization</h5>
+                      <p class="vision-blurb"> Each Spotify listening experience is unique. This feature allows for "in the moment" personalization.</p>
+                    </div>
+                  </div>
+                 <h2 class="section-heading">Screens</h2>
+                 <img src="..//project4/img/Spotify - Screens.png" class="screens" alt="3 Different Spotify App Screens">
+                <p class="screens-blurb">The main three screens are shown above. When the user is ready to select the playlists they want to add to their Playlist 
+                    Mixer, they would press "select" on the top right hand corner. Then, they are prompted with slider bars. The slider bars are visual and 
+                    interactive to allow users to visualize and manipulate their desired playlist balance. This feature allows users to control and mold their 
+                    music to their "in the moment" preferences.</p>
+
+                 <h2 class="section-heading">Usability Testing</h2>
+                 <p class="content">After conducting usability testing with 8 Spotify users, I found two usability issues that I fixed. One issue was that the 
+                    'select' button was hard for users to locate. Therefore, I made the button larger and changed the color to increase contrast.</p>
+                 <p class="content">The second problem was that when users selected a playlist, they tried to click on the title, album, or blank space. Therefore, 
+                    I made it was all clickable to create a user-friendly experience.</p>
+                    <h3 class="section-subheading">Pre-Usability Testing</h3>
+                    <div class="Pre-usability-video">
+                    <iframe src="https://www.youtube.com/embed/98IMaikGJQ8?rel=0&;controls=1&;autoplay=0&;mute=0&;start=0" frameborder="0" title="Pre Usabiity Spotify"></iframe>
+                    </div>
+                <h2 class="section-heading" id="Final-Product">Final Product</h2>
+                <div class="final-product-video">
+                    <iframe src="https://www.youtube.com/embed/cmsEmadKuf8?rel=0&controls=1&autoplay=0&mute=0&start=0" frameborder="0" title="Pre Usabiity Spotify"></iframe>
+                    </div>
+                    
+                     <div class="button">
+                        <a href="#top" class="skip-button">Back to Top</a>
+                    </div>
+                
+        </div>
+
+      <div class="footer-wrap">
+    <div class="copyright">Copyright 2023</div>
+    <div>
+      <a href="..//project4/Privacy Policy.html" class="privacy-policy"> Privacy Policy</a>
+    </div>
+    <div id="date-time" class="date-time"></div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/pooja-jain-1573601b8/" class="footer-icon"><img src="..//project4/img/Icon - LinkedIn.png" alt="LinkedIn Icon"></a>
+      <a href="https://github.com/pjain6801" class="footer-icon"><img src="..//project4/img/Icon - Github.png" alt="Github Icon"></a>
+    </div>
+
+
+
+</body>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Pooja Jain, UX, Design, Portfolio">
+  <meta name="keywords" content="My contact info">
+  <meta name="copyright" content="The Owner">
+  <meta name="author" content="Pooja Jain">
+  <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../project4/css/style.css"> 
+    <link rel="shortcut icon" type="image/x-icon" href="..//project4/img/favicon.png">
+
+<title>Contact</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8e866565bb.js" crossorigin="anonymous"></script>
+
+		<script>
+			// Function to format 1 in 01
+			const zeroFill = n => {
+				return ('0' + n).slice(-2);
+			}
+
+			// Creates interval
+			const interval = setInterval(() => {
+				// Get current time
+				const now = new Date();
+
+				// Format date as in mm/dd/aaaa hh:ii:ss
+				const dateTime = zeroFill((now.getMonth() + 1)) + '/' + zeroFill(now.getUTCDate()) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+				// Display the date and time on the screen using div#date-time
+				document.getElementById('date-time').innerHTML = dateTime;
+			}, 1000);
+		</script>
+    
+    <header class="navigation w-nav">
+      <div class="navigation-items">
+          <a href="..//project4/index.html" class="logo-link w-brand w--current"><img src="../project4/img/logo-final-.png" width="56" alt=" my initals logo" class="logo-image"></a>
+          <div class="navigation-wrap">
+            <nav role="navigation">
+              <a href="../project4/index.html" class="nav-items w-text w--current">Work</a>
+              <a href="../project4/About page.html" class="nav-items w-text">About</a>
+              <a href="https://github.com/pjain6801" class="nav-items w-text">Code</a>
+              <a href="../project4/Pooja Jain Resume.pdf" class="nav-items w-text">Resume</a>
+              <a href="..//project4/Contact.html" class="nav-items w-text">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+
+    <body>
+
+        
+        <h2 class="section-heading-2">Let's Connect!</h2>
+        <p class="content-2">I would love to start off a conversation with you. Just put your number & basic contact details below, and I'll get right back to you.</p>
+
+        <div class="project-content">
+        <div class="contact-grid">
+            <div class="contact-info1">
+                <h3 class="contact-section-heading">My Info</h3>
+                <div class="phone-number">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="content">732-570-9292</p>
+                </div>
+                <div class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p class="content">pjain6801@gmail.com</p>
+                </div>
+
+                <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="content">22 Addington Court, <br> East Brunswick, NJ 08816</p>
+                </div>
+                <div class="address">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/pooja-jain-1573601b8/">/pooja-jain-1573601b8/</a>
+                </div>
+
+            </div>
+            <div class="contact-info2">
+              <h3 class="contact-section-heading">Message Me</h3>
+              <fieldset>
+              <legend>Contact Information</legend>
+              <form action="pjain6801@gmail.com" method="get" enctype="text/plain">
+                <div class="form-grid">
+                    <div class="form-block1">
+                        <label for="fname">First name* </label><br>
+                        <input type="text" placeholder="John" tabindex="1" required><br>
+                    </div>
+                    <div class="form-block2">
+                        <label for="lname">Last name</label><br>
+                        <input type="text" placeholder="Doe" tabindex="2"><br>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-block1">
+                        <label for="email">Email* </label><br>
+                        <input type="email" placeholder="johndoe@gmail.com" tabindex="3" required><br><br>
+                    </div>
+                    <div class="form-block2">
+                        <label for="lname">Phone Number</label><br>
+                        <input type="text" placeholder="(XXX)-XXX-XXXX" tabindex="4"><br>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-block1">
+                        <input type="checkbox" value="Personal" tabindex="5">
+                        <label for="vehicle1"> Personal Email</label><br>
+                        <input type="checkbox" value="Work" tabindex="6">
+                        <label for="vehicle2"> Work Email</label><br>
+                    </div>
+                    <div class="form-block2">
+                        <input type="radio" value="Home" tabindex="7">
+                        <label for="html">Home Number</label><br>
+                        <input type="radio" value="Cell" tabindex="8">
+                        <label for="css">Cell Number</label><br>
+                        <input type="radio"value="Work" tabindex="9">
+                <label for="javascript">Work Number</label> <br>
+                    </div>
+                </div>
+
+                <label for="subject">Subject* </label><br>
+                <input type="text" placeholder="Hello" tabindex="10" required><br><br>
+
+                <label for="message" required>Message*</label><br>
+                <textarea name="body" rows="5" cols="50" placeholder="Your Message" tabindex="11"></textarea><br><br>
+
+                <input type="submit" value="Submit" tabindex="12">
+              </fieldset>
+
+                </div>
+              </form>
+
+            </div>   
+          </div>
+        </div>
+
+
+      </body>
+
+
+
+
+
+  <div class="footer-wrap">
+    <div class="copyright">Copyright 2023</div>
+    <div>
+      <a href="..//project4/Privacy Policy.html" class="privacy-policy"> Privacy Policy</a>
+    </div>
+    <div id="date-time" class="date-time"></div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/pooja-jain-1573601b8/" class="footer-icon"><img src="..//project4/img/Icon - LinkedIn.png" alt="LinkedIn Icon"></a>
+      <a href="https://github.com/pjain6801" class="footer-icon"><img src="..//project4/img/Icon - Github.png" alt="Github Icon"></a>
+    </div>
+
+</body>
+</html>

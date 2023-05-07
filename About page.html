@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Pooja Jain, UX, Design, Portfolio">
+  <meta name="keywords" content="Description about myself">
+  <meta name="copyright" content="The Owner">
+  <meta name="author" content="Pooja Jain">
+  <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../project4/css/style.css"> 
+    <link rel="shortcut icon" type="image/x-icon" href="..//project4/img/favicon.png">
+    
+<style>
+    *{
+        background-color: white;
+    }
+</style>
+<title>About</title>
+</head>
+<body>
+
+  <script>
+    // Function to format 1 in 01
+    const zeroFill = n => {
+      return ('0' + n).slice(-2);
+    }
+
+    // Creates interval
+    const interval = setInterval(() => {
+      // Get current time
+      const now = new Date();
+
+      // Format date as in mm/dd/aaaa hh:ii:ss
+      const dateTime = zeroFill((now.getMonth() + 1)) + '/' + zeroFill(now.getUTCDate()) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+      // Display the date and time on the screen using div#date-time
+      document.getElementById('date-time').innerHTML = dateTime;
+    }, 1000);
+  </script>
+
+<header class="navigation w-nav">
+  <div class="navigation-items">
+      <a href="..//project4/index.html" class="logo-link w-brand w--current"><img src="../project4/img/logo-final-.png" width="56" alt=" my initals logo" class="logo-image"></a>
+      <div class="navigation-wrap">
+        <nav role="navigation">
+          <a href="../project4/index.html" class="nav-items w-text w--current">Work</a>
+          <a href="../project4/About page.html" class="nav-items w-text">About</a>
+          <a href="https://github.com/pjain6801" class="nav-items w-text">Code</a>
+          <a href="../project4/Pooja Jain Resume.pdf" class="nav-items w-text">Resume</a>
+          <a href="..//project4/Contact.html" class="nav-items w-text">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+        <div class="about-section">
+            <div class="container">
+              <div class="w-layout-grid about-intro-grid">
+                <div id="w-node-_9b2922ad-09b1-aebb-0430-7dee623c62c1-b703c80c" class="about-head-text-wrap">
+                  <h2 class="hi-there-heading">Pooja Jain</h2>
+                  <p class="paragraph-light"> I thrive at the intersection of design, technology, and psychology. Design is so much more than just visual appeal. It is 
+                    truly fundamental to how a product works, who it helps, and how successful a product is. I’m always trying to learn about modern technologies, 
+                    pick up programming skills, and expand my knowledge in different areas.
+                     <br>‍<br>I am a student majoring in Web & Digital Design. I apply a human-centric approach to problem solving. I love using what I know about 
+                     human behavior to build user-centered interfaces and designs. 
+                     <br><br>Outside of school, I enjoy creating choreography, writing poetry, and video production. Teaching dance choreographies to children has 
+                     taught me how to break complex dance moves into digestible steps for my team. Writing poetry has been one of my strongest artistic channels to 
+                     articulate common human experiences in a way that provokes emotions and conversation.</p>
+                </div><img src="../project4/img/my pic.jpg"  sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 860px) 93vw, 800px" alt="Picture of Me" class="my-pic">
+              </div>
+            </div>
+
+            <div class="footer-wrap">
+              <div class="copyright">Copyright 2023</div>
+              <div>
+                <a href="..//project4/Privacy Policy.html" class="privacy-policy"> Privacy Policy</a>
+              </div>
+              <div id="date-time" class="date-time"></div>
+              <div class="footer-links">
+                <a href="https://www.linkedin.com/in/pooja-jain-1573601b8/" class="footer-icon"><img src="..//project4/img/Icon - LinkedIn.png" alt="LinkedIn Icon"></a>
+                <a href="https://github.com/pjain6801" class="footer-icon"><img src="..//project4/img/Icon - Github.png" alt="Github Icon"></a>
+              </div>
+
+</body>
+</html>

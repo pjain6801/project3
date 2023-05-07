@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Pooja Jain, UX, Design, Portfolio">
+  <meta name="keywords" content="My Portfolio which showcases my projects and skills">
+  <meta name="copyright" content="The Owner">
+  <meta name="author" content="Pooja Jain">
+  <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../project4/css/style.css"> 
+    <link rel="shortcut icon" type="image/x-icon" href="..//project4/img/favicon.png">
+
+<title>Project 4</title>
+</head>
+<body>
+
+	<script>
+    // Function to format 1 in 01
+    const zeroFill = n => {
+      return ('0' + n).slice(-2);
+    }
+
+    // Creates interval
+    const interval = setInterval(() => {
+      // Get current time
+      const now = new Date();
+
+      // Format date as in mm/dd/aaaa hh:ii:ss
+      const dateTime = zeroFill((now.getMonth() + 1)) + '/' + zeroFill(now.getUTCDate()) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+      // Display the date and time on the screen using div#date-time
+      document.getElementById('date-time').innerHTML = dateTime;
+    }, 1000);
+  </script>
+
+
+    <header class="navigation w-nav">
+    <div class="navigation-items">
+        <a href="..//project4/index.html" class="logo-link w-brand w--current"><img src="../project4/img/logo-final-.png" width="56" alt=" my initals logo" class="logo-image"></a>
+        <div class="navigation-wrap">
+          <nav role="navigation">
+            <a href="../project4/index.html" class="nav-items w-text w--current">Work</a>
+            <a href="../project4/About page.html" class="nav-items w-text">About</a>
+            <a href="https://github.com/pjain6801" class="nav-items w-text">Code</a>
+            <a href="../project4/Pooja Jain Resume.pdf" class="nav-items w-text">Resume</a>
+            <a href="..//project4/Contact.html" class="nav-items w-text">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero-image">
+      <img src="..//project4/img/Hero Image.jpg" alt="Hero Image">
+      <div class="hero-text">
+        <div class="section">
+          <h1 class="heading-jumbo">Hi there, I'm Pooja Jain.</h1>
+      </div>
+      <h4 class="intro-bio">I am a UX designer who is passionate about solving problems with human-centered approach.</h4>
+      </div>
+    </div>
+    <h5>Work</h5>
+
+
+    <div class="Parent">
+      <a href="..//project4/Digital Closet.html">
+      <div class="child1">
+          <h1 class="project-name">Digital Closet</h1>
+          <p class="project-bio"> An app and website to help users plan outfits</p>
+      </div>
+      <div class="child2">
+        <img src="..//project4/img/Thumbnail- Digital Closet.png" alt="Digital Closet Project- Small pic">
+      </div>
+    </a>
+  </div>
+
+    <div class="Parent">
+      <a href="..//project4/Mobile Programming.html">
+      <div class="child1">
+          <h1 class="project-name">Mobile Programming</h1>
+          <p class="project-bio"> UX Design & Graphic Design projects</p>
+      </div>
+      <div class="child2">
+        <img src="..//project4/img/Thumbnail - Mobile Programing.png" alt="Mobile Programming Projects - Small pic">
+      </div>
+    </a>
+  </div>
+
+  <div class="Parent">
+    <a href="..//project4/Spotify Playlist Mixer.html">
+    <div class="child1">
+        <h1 class="project-name">Spotify Playlist Mixer</h1>
+        <p class="project-bio">An interactive feature that promotes music personalization for unique listening experiences</p>
+    </div>
+    <div class="child2">
+      <img src="..//project4/img/Thumbnail - Spotify Playlist Mixer.png" alt="Spotify Playlist Mixer Feature- Small pic">
+    </div>
+  </a>
+</div>
+
+<div class="Parent">
+  <a href="..//project4/WYR.html">
+  <div class="child1">
+      <h1 class="project-name">WYR</h1>
+      <p class="project-bio">An informational tool that integrates multi-platform data to help students learn about and choose classes</p>
+  </div>
+  <div class="child2">
+    <img src="..//project4/img/Thumbnail - WYR.png" alt=" WYR Project- Small pic">
+  </div>
+</a>
+</div>  
+
+<div class="Parent">
+  <a href="..//project4/Insta Redesign.html">
+  <div class="child1">
+      <h1 class="project-name">Insta Redesign</h1>
+      <p class="project-bio">Redesigned Instagram experience for increased authentic online engagement</p>
+  </div>
+  <div class="child2">
+    <img src="..//project4/img/Thumbnail - Insta Redesign.png" alt=" Insta App Redesign Project - Small pic">
+  </div>
+</a>
+</div>  
+
+<div class="Parent">
+  <a href="..//project4/Maynooth Furniture.html">
+  <div class="child1">
+      <h1 class="project-name">Maynooth Furniture</h1>
+      <p class="project-bio">Website and App for an E-commerce company</p>
+  </div>
+  <div class="child2">
+    <img src="..//project4/img/Thumbnail - Maynooth Furniture.png" alt="Maynooth Furniture Website Project - Small pic">
+  </div>
+</a>
+</div>
+
+  <div class="footer-wrap">
+    <div class="copyright">Copyright 2023</div>
+    <div>
+      <a href="..//project4/Privacy Policy.html" class="privacy-policy"> Privacy Policy</a>
+    </div>
+    <div id="date-time" class="date-time"></div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/pooja-jain-1573601b8/" class="footer-icon"><img src="..//project4/img/Icon - LinkedIn.png" alt="LinkedIn Icon"></a>
+      <a href="https://github.com/pjain6801" class="footer-icon"><img src="..//project4/img/Icon - Github.png" alt="Github Icon"></a>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
